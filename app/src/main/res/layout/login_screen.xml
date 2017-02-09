@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding"
+    android:background="@color/login_blue">
+
+    <TextView
+        style="@style/myHeaderOne"
+        android:text="@string/account_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_title_padding"
+        android:id="@+id/textLoginTitle" />
+
+    <LinearLayout
+        android:id="@+id/whiteBox"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLoginTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_box_padding"
+        android:background="@color/white"
+        android:padding="@dimen/layout_padding">
+
+        <EditText
+            style="@style/myEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/user_icon"
+            android:hint="@string/name"
+            android:id="@+id/editUserName" />
+
+        <EditText
+            style="@style/myEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/passw_icon"
+            android:hint="@string/password"
+            android:id="@+id/editUserPassword" />
+
+        <TextView
+            android:text="@string/forgot_your_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textForgot"
+            android:gravity="right"
+            android:textColor="@color/login_red" />
+
+        <Button
+            android:text="@string/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogin"
+            android:layout_marginTop="20dp"
+            android:background="@color/login_yellow"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_user"
+        android:layout_alignTop="@+id/whiteBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:id="@+id/view" />
+
+</RelativeLayout>

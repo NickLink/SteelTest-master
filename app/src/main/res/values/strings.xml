@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SteelTest</string>
+
+    <string name="Client_ID">c70ee099ff3af12699d2</string>
+    <string name="Client_Secret">5fb9190adf47a690398ea8e544ca85448c6bb83f</string>
+
+    <string name="account_login">Account Login</string>
+    <string name="user_name">User name</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="great_you_logged">Great! You logged!</string>
+    <string name="you_logged_as">You logged as:</string>
+    <string name="your_id_is">Your Id is:</string>
+    <string name="your_repos_list_is">Your repos list is:</string>
+    <string name="no_desc_found">No description found</string>
+    <string name="type_to_search">Type to search</string>
+
+
+</resources>
